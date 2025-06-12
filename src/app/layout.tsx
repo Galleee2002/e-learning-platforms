@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 
 export const metadata: Metadata = {
-  title: "EduPlatform",
+  title: "EducAR",
   description: "Plataforma educativa digital",
 };
 

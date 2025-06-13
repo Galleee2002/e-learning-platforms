@@ -1,0 +1,38 @@
+# Entorno virtual
+venv/
+env/
+
+# Variables de entorno
+.env
+.env.local
+
+# Base de datos
+*.db
+*.sqlite
+
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Migraciones
+migrations/versions/
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+
+# Backups
+backups/

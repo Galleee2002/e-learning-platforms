@@ -1,6 +1,8 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
+import ClientProvider from "@/components/providers/ClientProvider";
 
 export const metadata: Metadata = {
   title: "EducAR",
@@ -15,8 +17,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <Navbar />
-        <main className="pt-16">{children}</main>
+        <ClientProvider>
+          <Navbar />
+          <main className="pt-16">{children}</main>
+        </ClientProvider>
       </body>
     </html>
   );
